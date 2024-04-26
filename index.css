@@ -1,0 +1,399 @@
+body {
+  margin: 0 auto;
+  user-select: none;
+  font-family: "Source Sans 3", serif;
+  box-sizing: border-box;
+}
+
+/*************************TypoGrapy**********************************/
+
+/* Index page */
+
+.journal-title {
+  font-size: 0.875em;
+  padding-left: 0.3125rem;
+  color: #090909;
+}
+
+.journal-title,
+.hero-title,
+.hero-preview,
+.article-preview,
+.article-title,
+.article-date,
+.about-me-title,
+footer p {
+  margin: 0;
+}
+
+.hero-text,
+.hero-title {
+  color: #fff;
+}
+
+.hero-text {
+  position: absolute;
+  text-align: left;
+  top: 20%;
+  left: 10%;
+  bottom: 10%;
+  padding-right: 0.625em;
+}
+
+.hero-date,
+.date {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 108.2%;
+  padding-right: 1.25em;
+}
+
+.about-me-title,
+.hero-title {
+  letter-spacing: -0.03em;
+}
+
+/* .hero-preview, .hero-date, .hero-title{
+  font-style: italic;
+} */
+
+article {
+  height: 100%;
+  margin-top: 1em;
+}
+.article-preview {
+  color: #505050;
+}
+
+.article-title {
+  color: #141414;
+  font-size: 1.5em;
+}
+
+.article-date {
+  color: #000000;
+  font-size: 0.9375em;
+}
+
+/* View Page */
+
+.blackFont,
+.about-me-title {
+  color: #151515;
+}
+
+.date {
+  margin-bottom: 0;
+}
+.titles,
+.header-nav ul {
+  font-weight: bold;
+}
+.recent-posts {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* About me page */
+.about-me-title {
+  font-size: 2.125em;
+  text-align: justify;
+}
+
+.footer-title,
+.copyright,
+.header-nav ul {
+  font-size: 0.75em;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #ececec;
+}
+
+.copyright {
+  color: #d7d7d7;
+}
+/*/////////////////////////// LAYOUT ////////////////////*/
+
+.container {
+  max-width: 25.875em;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 2px solid darkblue;
+  background-color: #FAFAFA;
+}
+.journal-header {
+  background-color: #ffffff;
+}
+
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  height: 59px;
+  width: 100%;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  color: #090909;
+}
+
+.logo,
+.header-nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 1.4375em;
+  height: 1.4375em;
+}
+.header-nav{
+  display: none;
+  /* flex-direction: column; */
+}
+.header-nav ul {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  margin-left: 1.4rem;
+  color: #090909;
+}
+.navbar{
+  display: flex;
+  gap: 1em;
+}
+.hero-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 18.3125em;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)),
+    url("./images/hero-bg.jpg");
+}
+
+.article-header {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* img{
+    width: 100%;
+ 
+} */
+.grid-container {
+  margin: 0 auto;
+  height: 100%;
+  width: 23.375em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.viewMore-btn {
+  text-decoration-line: underline;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  background: none;
+  padding: 0.625em;
+  margin-bottom: 1.5625em;
+}
+
+
+/* ************
+                         Medai Queries  **************/
+
+/* View page */
+
+.article-img {
+  width: 100%;
+  border-radius: 3%;
+  height: 11.9375em;
+  margin-top: 0.625em;
+}
+
+/* About me Page */
+
+.profile-pic {
+  width: 11.375em;
+  height: 11.375em;
+  background-image: url(images/profile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.25em;
+}
+
+footer {
+  background-color: #202020;
+  text-align: center;
+  color: #ffffff;
+  padding: 1.25em 0;
+}
+
+.posts-container
+article:last-child {
+  margin-bottom: 1.5625em;
+}
+
+a{
+  text-decoration: none;
+  color: #090909;
+  
+}
+
+#menu-icon{
+  color: #090909;
+  font-size:  1.0625em;
+  align-self: flex-end;
+  
+}
+
+.post-images{
+  /* width: 374px;
+  height: 232px; */
+  border-radius: 10px;
+}
+
+
+/* ////////////////////////////////////MEDIA QUERIES////////////////////////////////////////////////////// */
+
+@media (min-width: 768px){
+  .container{
+    max-width: 1085px;
+  }
+
+  .journal-header{
+    height: 5.1875em;
+  }
+
+  .journal-title{
+    font-size: 1.25em;
+  }
+
+  .logo{
+    margin-left: 3.25em;
+  }
+
+  .header-nav ul{
+    font-size: 1em;
+    padding-right: 3.3125em;
+  }
+
+  .navbar{
+    gap: 2em;
+  }
+
+  #menu-icon{
+    font-size: 2em;
+    
+  }
+
+
+
+  .hero-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30.5em;
+  }
+
+  .hero-text{
+    top: 50%;
+  }
+
+  .hero-date{
+    font-size: 1em;
+
+  }
+
+  .hero-title{
+    font-size: 2.5em;
+  }
+
+  .grid-container{
+    min-width: 61.1875em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    margin-top: 2.5em;
+    grid-auto-flow: dense; 
+  }
+
+  .blog-article{
+    
+    width: 19.3125em;
+    /* height: 14.5em; */
+  }
+
+  .post-images{
+    width: 19.3125em;
+    height: 19.3125em;
+  }
+
+  .viewMore-btn{
+    text-align: center;
+    width: 27.4375em;
+    grid-column: 2/3;
+  }
+
+  .article-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width:  52.75em;
+    margin-top: 0;
+  }
+
+  .article-container .hero-preview,
+  .about-me .hero-preview{
+    margin: 0.625em 0;
+  }
+
+  .posts-container{
+    margin-top: 0;
+  }
+
+  .article-img{
+    height: 30.5em;
+  }
+
+  .titles, 
+  .recent-posts{
+    font-size: 1.5em;
+  }
+
+  .about-me{
+    display: flex;
+    gap: 2em;
+    margin-top: 5.625em;
+    
+  
+  }
+
+  .about-me article{
+    width: 47.75em;
+    height: 8em;
+    padding: 1.25em;
+  }
+
+  .profile-pic{
+    margin-left:3.3125em ;
+  }
+
+  .about-me-title{
+    font-size: 2.25em;
+  }
+
+}
+
+
+
