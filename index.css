@@ -274,7 +274,7 @@ a{
 
 @media (min-width: 768px){
   .container{
-    min-width: 1085px;
+    min-width: 100%;
   }
 
   .journal-header{
