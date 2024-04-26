@@ -261,11 +261,14 @@ a{
 }
 
 .post-images{
-  /* width: 374px;
-  height: 232px; */
+   width: 374px;
+  height: 232px; 
   border-radius: 3px;
 }
 
+.hidden{
+  display: none;
+}
 
 /* ////////////////////////////////////MEDIA QUERIES////////////////////////////////////////////////////// */
 
