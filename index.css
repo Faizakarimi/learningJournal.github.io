@@ -125,7 +125,7 @@ article {
   max-width: 25.875em;
   min-height: 100vh;
   margin: 0 auto;
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
   background-color: #FAFAFA;
 }
 .journal-header {
@@ -227,11 +227,12 @@ li {
 .profile-pic {
   width: 11.375em;
   height: 11.375em;
-  background-image: url(images/profile.png);
+  background-image: url(images/profile-avatar.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 1.25em;
+  
 }
 
 footer {
@@ -262,7 +263,7 @@ a{
 .post-images{
   /* width: 374px;
   height: 232px; */
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 
@@ -327,6 +328,7 @@ a{
     gap: 0.5em;
     margin-top: 2.5em;
     grid-auto-flow: dense; 
+    align-items: center;
   }
 
   .blog-article{
@@ -342,14 +344,14 @@ a{
 
   .viewMore-btn{
     text-align: center;
-    width: 27.4375em;
     grid-column: 2/3;
+    font-size: 1em;
   }
 
   .article-container{
     display: grid;
     grid-template-columns: 1fr;
-    min-width:  52.75em;
+    /* min-width:  52.75em; */
     margin-top: 0;
   }
 
@@ -374,7 +376,7 @@ a{
   .about-me{
     display: flex;
     gap: 2em;
-    margin-top: 5.625em;
+    margin-top: 3em;
     
   
   }
@@ -392,6 +394,15 @@ a{
   .about-me-title{
     font-size: 2.25em;
   }
+
+  .about-me-article{
+    padding-left: 4em;
+  }
+
+  .posts-container
+article:last-child{
+  margin-bottom: 0;
+}
 
 }
 
