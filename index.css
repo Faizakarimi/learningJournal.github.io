@@ -322,7 +322,7 @@ a {
     gap: 0.5em;
     margin-top: 2.5em;
     grid-auto-flow: dense;
-    align-items: center;
+    
   }
 
   .blog-article {
@@ -354,7 +354,7 @@ a {
   }
 
   .posts-container {
-    margin-top: 0;
+    margin: 0 0 2em 0;
   }
 
   .article-img {
