@@ -16,7 +16,6 @@ document.getElementById('menu-icon').addEventListener('click', function () {
 
 
 viewMoreBtn.addEventListener('click', function(){
-    console.log('clicked')
     for (let i = 0; i< hiddenArticles.length; i++){
         hiddenArticles[i].style.display = 'block'
     }
