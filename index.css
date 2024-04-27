@@ -339,6 +339,7 @@ a {
     text-align: center;
     grid-column: 2/3;
     font-size: 1em;
+    cursor: pointer;
   }
 
   .article-container {
